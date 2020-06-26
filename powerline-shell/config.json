@@ -1,0 +1,21 @@
+{
+  "segments": [
+    "virtual_env",
+    "username",
+    "hostname",
+    "ssh",
+    "cwd",
+    "git",
+    "hg",
+    "jobs",
+    "root"
+  ],
+  "mode": "patched",
+  "cwd": {
+    "max_depth": 5
+  },
+  "theme": "~/.config/powerline-shell/themes/gruvbox.py",
+  "vcs": {
+    "show_symbol": "true"
+  }
+}
