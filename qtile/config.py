@@ -207,11 +207,40 @@ keys = [
              lazy.spawn("./.dmenu/dmenu-scrot.sh"),
              desc='Dmenu scrot script'
              ),
-         ### My applications launched with SUPER + ALT + KEY
          Key(
              [mod, "mod1"], "b",
              lazy.spawn("brave"),
              desc='brave browser'
+             ),
+         Key(
+             [mod], "F3",
+             lazy.spawn("amixer set 'Master' 10%+"),
+             desc='volume up 10%'
+             ),
+         Key(
+             [mod], "F2",
+             lazy.spawn("amixer set 'Master' 10%-"),
+             desc='volume up 10%'
+             ),
+         Key(
+             [mod], "F1",
+             lazy.spawn("amixer set 'Master' toggle"),
+             desc='Volume mute toggle'
+             ),
+         Key(
+             [mod], "F8",
+             lazy.spawn("wifi toggle"),
+             desc='Wifi on/off Toggle'
+             ),
+         Key(
+             [mod], "F9",
+             lazy.spawn("systemsettings5"),
+             desc='Volume mute toggle'
+             ),
+         Key(
+             [mod], "F4",
+             lazy.spawn("playerctl play-pause"),
+             desc='Toggle PLay / Pause media players.'
              ),
 ]
 
@@ -230,7 +259,7 @@ groups = [Group(name, **kwargs) for name, kwargs in group_names]
 
 for i, (name, kwargs) in enumerate(group_names, 1):
     keys.append(Key([mod], str(i), lazy.group[name].toscreen()))        # Switch to another group
-    keys.append(Key([mod, "shift"], str(i), lazy.window.togroup(name))) # Send current window to another group	
+    keys.append(Key([mod, "shift"], str(i), lazy.window.togroup(name))) # Send current window to another group
 
 ##### DEFAULT THEME SETTINGS FOR LAYOUTS #####
 layout_theme = {"border_width": 3,
@@ -275,7 +304,7 @@ extension_defaults = widget_defaults.copy()
 def init_widgets_list():
     widgets_list = [
           widget.TextBox(
-                        text ='  ',# i 
+                        text ='  ',# i
                         background = colors[0],
                         foreground = colors[2],
                         fontsize=14
