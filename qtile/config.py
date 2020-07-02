@@ -60,9 +60,9 @@ keys = [
              desc='Launches My Terminal'
              ),
          Key(
-             [mod, "shift"], "Return",
-             lazy.spawn("krunner"),
-             desc='Krunner Run Launche'
+             ["mod1"], "space",
+             lazy.spawn("dmenu_run"),
+             desc='Starts Dmenu on the bar'
              ),
          Key(
              [mod], "Tab",
@@ -70,7 +70,7 @@ keys = [
              desc='Toggle through layouts'
              ),
          Key(
-             [mod, "shift"], "c",
+             [mod], "c",
              lazy.window.kill(),
              desc='Kill active window'
              ),
@@ -172,6 +172,7 @@ keys = [
              desc='Toggle between split and unsplit sides of stack'
              ),
          ### Dmenu scripts launched with ALT + CTRL + KEY
+         ### to get these i i might look at DistroTube's scripts and see what he did. but atm i dont use these.
          Key(
              ["mod1", "control"], "e",
              lazy.spawn("./.dmenu/dmenu-edit-configs.sh"),
@@ -273,7 +274,7 @@ layouts = [
     layout.MonadTall(**layout_theme),
     layout.Max(**layout_theme),
     layout.Tile(shift_windows=True, **layout_theme),
-    layout.Floating(**layout_theme)
+    layout.Floating(**layout_theme) #Floating layout isnt a thing. but it bugged out when i removed it so meh.
 ]
 
 ##### COLORS #####
@@ -284,7 +285,7 @@ colors = [["#1b1519", "#1b1519"], # 0 - panel background
           ["#39342d", "#39342d"], # 4 - border line color for other tab and odd widgets
           ["#2b2222", "#2b2222"], # 5 - color for the even widgets
           ["#c3807a", "#c3807a"], # 6 - window title
-          ["#c3807a", "#c3807a"], # 7 - dark beige font color
+          ["#c3807a", "#c3807a"], # 7 - Light red widget font color
           ["#535337", "#535337"], # 8 - dark beige background
           ["#3a3a3a", "#3a3a3a"]] # 9 - dark gray systray
 
@@ -578,7 +579,7 @@ floating_layout = layout.Floating(float_rules=[
     {'wname': 'branchdialog'},  # gitk
     {'wname': 'pinentry'},  # GPG key password entry
     {'wmclass': 'ssh-askpass'},  # ssh-askpass
-])
+], **layout_theme) #the theme has to be put here. as floating layout isnt a real layout but a window state.
 auto_fullscreen = True
 focus_on_window_activation = "smart"
 
@@ -596,4 +597,6 @@ def start_once():
 #
 # We choose LG3D to maximize irony: it is a 3D non-reparenting WM written in
 # java that happens to be on java's whitelist.
+
+#meh fuck that. i want it to say qtile in neofetch. so i put qtile here.
 wmname = "qtile"
