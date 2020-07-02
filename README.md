@@ -1,4 +1,4 @@
-# MY LINIX DOTFILES.
+# MY LINUX DOTFILES.
 In here you will find my config files, themes, custom scrips i use, ascii art and more.
 
 At the moment the window manager i live in, Is [Qtile](https://github.com/qtile). If you want more info info about Qtile. Read about it on their github (that i linked), or at [Qtile.org](http://www.qtile.org/). 
