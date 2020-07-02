@@ -1,13 +1,117 @@
 # MY LINIX DOTFILES.
+In here you will find my config files, themes, custom scrips i use, ascii art and more.
 
-here are some screenshots
+At the moment the window manager i live in, Is [Qtile](https://github.com/qtile). If you want more info info about Qtile. Read about it on their github (that i linked), or at [Qtile.org](http://www.qtile.org/). 
+
+All my wallpapers can be found in my imgur imagegallery at the bottom. in the albu there are multiple wallpapers fitting my theme and colorscheme. and i add more there from time to time.
+
+
+
+# Custom Browser homepage
+I also made a custom homepage. i tried to make it very minimal. with just links to what i use the most on the web. some entertainment, some solial media, and some stuff for when i need to look stff up with linux.
+
+There is also a javascript/jquery portion. so if you are a mini richard stallman and afraid of javascript. then thats fine. just remove that part. but the clock is also javascript so i wwuess remove that aswell. anyhow, the javascript portion is basicly my version of a news feed. its only tech news. and its using the so called "hackernews" api. its kinda dumb but what ever. its basicly just a site that collect RSS and links by crawling the web for keywords related to tech.
+
+Its all styled to match the rice and theme. the css is very responsive to sizing. so pretty much any monitor size will look ok. the background is on the rather larger side. thats because i have the image locally. and i have a lot of storage. if thats an issue for you. just remove the src for it in the .css file. as the static background is also styled to match everything. under is a screenshot, and a link to a video showing how it looks.
+![](https://i.imgur.com/qnSyfwM.png)
+[Video](https://i.imgur.com/bJiGTEj.mp4)
+
+
+
+# About my setup.
+
+## Dependencies
+there are some **dependencies** for my setup. Meaning some stuff you have to install extra if you are going to use my dotfiles.
+* **Dmenu** - Run / App launcher  [[Suckless]](https://tools.suckless.org/dmenu) [[AUR]](https://aur.archlinux.org/packages/dmenu-git/)
+* **Psutil** - for statusbar net widget  [[pypi]](https://pypi.org/project/psutil/)
+* **Picom** - Compisitor for opacity, shaddows & blur  [[github]](https://github.com/yshui/picom) [[AUR]](https://aur.archlinux.org/packages/picom-git/)
+
+
+## My Default apps & more
+
+| Web Browser | File Manager | Media Player | Text editor | Terminal |
+|:-----------:|:-------------:|:-------------:|:-------------:|:-------------:|
+| Brave (edge when it comes to linux) | Ranger & dolphin | Spotify(music) & VLC(video) | Vim | Alacritty |
+
+I Use Manjaro as my distro. as its fast to install. really only the reason. and i also have KDE Plasma installed. as its running games better nativly. not that i game much on this setup anyways. but thats that.
+
+| Vim Theme | Alacritty theme |
+|:-----------:|:-------------:|
+| miramare | slopeiz (my own theme) |
+
+
+### My welcome message in the terminal
+in my terminal i have a custom message showing up everytime i open a terminal or refresh bash.
+i have done this very simple. i just have a ```.txt``` file with the message / ascii art in.
+
+```
+  ┌─────────────────────────┐┌──────────────────────────── 降卋神通 ───────────────────────────────────┐
+  │ 水善 - 土強 - 火烈 -气和││ Water is Benevolent, Earth is Strong, Fire is Fierce, Air is Harmonious │
+  └─────────────────────────┘└─────────────────────────────────────────────────────────────────────────┘
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │                                                                                                    │
+  │ ██╗    ██╗███████╗██╗      ██████╗ ██████╗ ███╗   ███╗███████╗    ██████╗  █████╗  ██████╗██╗  ██╗ │
+  │ ██║    ██║██╔════╝██║     ██╔════╝██╔═══██╗████╗ ████║██╔════╝    ██╔══██╗██╔══██╗██╔════╝██║ ██╔╝ │
+  │ ██║ █╗ ██║█████╗  ██║     ██║     ██║   ██║██╔████╔██║█████╗      ██████╔╝███████║██║     █████╔╝  │
+  │ ██║███╗██║██╔══╝  ██║     ██║     ██║   ██║██║╚██╔╝██║██╔══╝      ██╔══██╗██╔══██║██║     ██╔═██╗  │
+  │ ╚███╔███╔╝███████╗███████╗╚██████╗╚██████╔╝██║ ╚═╝ ██║███████╗    ██████╔╝██║  ██║╚██████╗██║  ██╗ │
+  │  ╚══╝╚══╝ ╚══════╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝    ╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝ │
+  │                                                                                                    │
+  └─────── walter  walter-manjaro ────────────────────────────────────────────────────────────────────┘
+```
+then i have an alias in my ```.bashrc``` that uses __cat__ to display it after it clears the screen and then i call that command at the bottom of my .bashrc. that means i made a command.
+im my .bashrc it looks like this:
+```
+alias welcome='clear; cat welcome.txt'
+welcome
+```
+## Colorscheme
+![](https://i.imgur.com/O2HTmV9.png)
+
+So..his is my theme. i called it slopeiz. because thats my gamer alias.
+not really much of inspiration. ive used a lot of themes before. but no one really worked for me. I changed themes all the time. but i always really love warm themes. its easier on the eyes. so thats one thing i thought about. i also liked some of the kinda matte google themes. they had goog contrasts but also never too striking. and so thats really the only inspiration i think. i might update this theme and or make a seperate repo for this aswell. I will for sure be making a vim and airline theme for this in the future.
+
+```
+colors:
+  # Default colors
+  primary:
+    background: '#1b1519'
+    foreground: '#ebdbb2'
+    
+    # Normal colors
+  normal:
+    black:   '#1b181b'
+    red:     '#ca402b'
+    green:   '#c3807a'
+    yellow:  '#bb8a35'
+    blue:    '#674a4d'
+    magenta: '#7b59c0'
+    cyan:    '#d7af87'
+    white:   '#ab9bab'
+
+  # Bright colors
+  bright:
+    black:   '#776977'
+    red:     '#ca402b'
+    green:   '#c3807a'
+    yellow:  '#bb8a35'
+    blue:    '#516aec'
+    magenta: '#7b59c0'
+    cyan:    '#d7af87'
+    white:   '#f7f3f7'
+```
+
+
+# Rice Screenshots
+![](https://i.imgur.com/JHFocL7.png)
 ![](https://i.imgur.com/BrddZCd.png)
 ![](https://i.imgur.com/ZjGeULI.png)
 ![](https://i.imgur.com/EzuChRs.png)
 
 
-### In here you will find my config files, themes, custom scrips i use, ascii art and more. Atm im using Qtile. And my wallpapers can be found in my imgur imagegallery at the bottom. Note that im using a patched nerd font to get my symbols and powerline. the font im using is Hack Nerd Font. it might be different with the padding etc if you use another variant.
 
 # Wallpapers to fit this theme.
-### Im going to be making more to fit the. and will update the album linked below
+### Im going to be making more to fit the theme.
+yes, they are all weeb wallpapers. i might make a seperate repo for these wallpapers to make it faster for people to get them.
+__also, a little warning. these images are all 5000x2813 . therefore they are kinda large files.__
 [Wallpapers](https://imgur.com/a/CtcinnP)
