@@ -1,0 +1,146 @@
+body {
+  font-family: monospace;
+  font-size: 12pt;
+  color: #ebdbb2;
+  background-color: #1b1519;
+  background: url(../images/bg.png) no-repeat center fixed;
+  background-size: cover;
+  text-align: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+#title {
+  margin-top: 3.5em;
+  margin-bottom: 12px;
+  font-size: 24pt;
+  text-align: center;
+}
+
+
+#clock {
+  text-align: center;
+  font-size: 24pt;
+  color: #ebdbb2;
+}
+
+#login {
+  display: inline-block;
+  padding-right: 5px;
+  text-align: center;
+  color: #ebdbb2;
+}
+#log_time {
+  display: inline-block;
+  padding-left: 5px;
+  text-align: center;
+  color: #c3807a;
+}
+
+.terminal-container {
+  width: 50%;
+  min-width: 500px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  background-color: #2b2222;
+  margin-top: 3em!important;
+  margin-bottom: 3em!important;
+  margin: auto;
+  box-shadow: 0px 0px 6px 6px rgba(0,0,0,0.30);
+  /* border: solid 1px #403232; */
+}
+
+.hackernews {
+  width: 50%;
+  min-width: 500px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  background-color: #2b2222;
+  margin: 0 auto;
+}
+
+.bookmark-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.bookmark-set {
+  border: 1px solid #c3807a;
+  flex: 1 0 100px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.bookmark-title {
+  font-size: 12pt;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+  color: #40323b;
+  background-color: #c3807a;
+}
+
+.bookmark {
+  font-size: 11pt;
+  margin-bottom: 2px;
+  text-align: center;
+  color: #c3807a;
+}
+
+.bookmark a:focus {
+  font-weight: bold;
+}
+
+
+/* -------------------------------- */
+.terminal-container2 {
+  width: 50%;
+  min-width: 500px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  background-color: #2b2222;
+  margin-top: -1em!important;
+  margin: auto;
+  box-shadow: 0px 0px 6px 6px rgba(0,0,0,0.30);
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.outputs {
+  color: #c3807a;
+  text-decoration: none;
+  position: relative;
+  white-space: nowrap;
+  animation: floatText 45s infinite linear;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ebdbb2;
+}
+
+@-webkit-keyframes floatText {
+  from {
+    left: 100%;
+  }
+  to {
+    /* left: auto; */
+    left: -100%;
+  }
+}
