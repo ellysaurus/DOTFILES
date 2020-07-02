@@ -14,7 +14,7 @@ There is some javascript/jquery. so if you are a mini Richard Stallman and afrai
 
 Anyhow, the javascript portion is basicly my version of a news feed. its only tech news. Its using the so called "hackernews" api. its kind of a dumb name but a neat little thing. its basicly just a site that collect RSS and links by crawling the web for keywords related to tech. and then list the relevant articles
 
-Its all styled to match the rice and theme. The css is very responsive to sizing. so pretty much any monitor size will look ok. the background image is on the rather larger side. thats because i have the image locally. and i have a lot of storage. if thats an issue for you. just remove the src for it in the .css file. as the static background is also styled to match everything. under is a screenshot, and a link to a __**video**__ showing how it looks in action.
+Its all styled to match the rice and theme. The css is very responsive to sizing. so pretty much any monitor size will look ok. the background image is on the rather larger side. thats because i have the image locally. and i have a lot of storage. if thats an issue for you. just remove the src for it in the .css file. as the static background is also styled to match everything. under is a screenshot, and a link to a _**video**_ showing how it looks in action.
 ![](https://i.imgur.com/qnSyfwM.png)
 [Video](https://i.imgur.com/bJiGTEj.mp4)
 
@@ -24,11 +24,12 @@ Its all styled to match the rice and theme. The css is very responsive to sizing
 
 ## Dependencies
 there are some **dependencies** for my setup. that means that there are some stuff you have to install, if you are going to use my dotfiles. here are the most important.
-__this section will be edited if i change stuff__
+
+_this section will be edited if i change stuff_
 * **Dmenu** - Run / App launcher  [[Suckless]](https://tools.suckless.org/dmenu) [[AUR]](https://aur.archlinux.org/packages/dmenu-git/)
 * **Psutil** - for statusbar net widget  [[pypi]](https://pypi.org/project/psutil/)
 * **Picom** - Compisitor for opacity, shaddows & blur  [[github]](https://github.com/yshui/picom) [[AUR]](https://aur.archlinux.org/packages/picom-git/)
-__and ofc there are some dependencies for qtile. but thats documented in their manuals and docs.__
+_and ofc there are some dependencies for qtile. but thats documented in their manuals and docs._
 
 
 ## My Default apps & more
@@ -63,7 +64,7 @@ i have done this very simple. i just have a ```.txt``` file with the message / a
   │                                                                                                    │
   └─────── walter  walter-manjaro ────────────────────────────────────────────────────────────────────┘
 ```
-then i have an alias in my ```.bashrc``` that uses __cat__ to display it after it clears the screen and then i call that command at the bottom of my .bashrc. that basicly means i made a command that looks like this:
+then i have an alias in my ```.bashrc``` that uses _cat_ to display it after it clears the screen and then i call that command at the bottom of my .bashrc. that basicly means i made a command that looks like this:
 ```
 alias welcome='clear; cat welcome.txt'
 welcome
@@ -77,8 +78,7 @@ and the result is like shown under.
 So..his is my theme. i called it slopeiz. because thats my gamer alias.
 not really much of inspiration i think. i mean im sure is more themes out there that kinda looks like this. ive used a lot of themes before. but no one really worked for me. I changed themes all the time. but i always really loved warm tones in my themes. its easier on the eyes. so thats one thing i kept in mind. i also liked some of the kinda matte google themes. they had good contrasts but also never too striking. and so thats really the only inspiration i think.
 
-__i might update this theme and or make a seperate repo for this aswell. I will for sure be making a vim and airline theme for this in the future.__
-
+_i might update this theme and or make a seperate repo for this aswell. I will for sure be making a vim and airline theme for this in the future._
 ```
 colors:
   # Default colors
@@ -121,5 +121,5 @@ colors:
 # Wallpapers to fit this theme.
 ### Im going to be making more to fit the theme.
 yes, they are all weeb wallpapers. i might make a seperate repo for these wallpapers to make it faster for people to get them.
-__also, a little warning. these images are all 5000x2813 PNG files. therefore they are kinda large files.__
+_also, a little warning. these images are all 5000x2813 PNG files. therefore they are kinda large files._
 [Wallpapers](https://imgur.com/a/CtcinnP)
