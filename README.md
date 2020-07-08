@@ -73,7 +73,7 @@ and the result is like shown under.
 ![](https://i.imgur.com/Ht3IrcY.png)
 
 ## Colorscheme
-![](https://i.imgur.com/O2HTmV9.png)
+![](https://i.imgur.com/2C9K99a.png)
 
 So..his is my theme. i called it slopeiz. because thats my gamer alias.
 not really much of inspiration i think. i mean im sure is more themes out there that kinda looks like this. ive used a lot of themes before. but no one really worked for me. I changed themes all the time. but i always really loved warm tones in my themes. its easier on the eyes. so thats one thing i kept in mind. i also liked some of the kinda matte google themes. they had good contrasts but also never too striking. and so thats really the only inspiration i think.
@@ -84,29 +84,29 @@ colors:
   # Default colors
   primary:
     background: '#1b1519'
-    foreground: '#ebdbb2'
-    
+    foreground: '#ffead6'
+
     # Normal colors
   normal:
     black:   '#1b181b'
-    red:     '#ca402b'
-    green:   '#c3807a'
-    yellow:  '#bb8a35'
-    blue:    '#674a4d'
-    magenta: '#7b59c0'
-    cyan:    '#d7af87'
-    white:   '#ab9bab'
+    red:     '#fc5133'
+    green:   '#80ac41'
+    yellow:  '#fec72f'
+    blue:    '#5f4494'
+    magenta: '#3f201a'
+    cyan:    '#7e5a5e'
+    white:   '#ffead6'
 
   # Bright colors
   bright:
-    black:   '#776977'
-    red:     '#ca402b'
-    green:   '#c3807a'
-    yellow:  '#bb8a35'
-    blue:    '#516aec'
-    magenta: '#7b59c0'
-    cyan:    '#d7af87'
-    white:   '#f7f3f7'
+    black:   '#3a3634'
+    red:     '#fc5133'
+    green:   '#b4d973'
+    yellow:  '#f8fd63'
+    blue:    '#7b59c0'
+    magenta: '#673225'
+    cyan:    '#c3807a'
+    white:   '#ffead6'
 ```
 
 
